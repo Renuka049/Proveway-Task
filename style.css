@@ -1,0 +1,207 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+}
+
+.container {
+  display: block;
+  gap: 10px;
+  background: #fff;
+  padding: 50px;
+  border-radius: 1px;
+}
+
+h3 {
+  color: #fc5b83;
+  text-align: center;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: -20px 0 0 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.divider::before {
+  margin-right: 8px;
+}
+
+.divider::after {
+  margin-left: 8px;
+}
+
+.box {
+  width: 360px;
+  height: 70px;
+  background: #fff;
+  color: black;
+  border: 2px solid#ccc;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.box-body {
+  min-height: inherit;
+  padding-inline-start: 1.5rem;
+  margin-block-end: 0px;
+  padding: 15px;
+}
+
+.form-control {
+  float: left;
+  margin-inline-start: 3px;
+}
+
+.box-class {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge,
+.box3-badge {
+  background-color: #fc5b83;
+  color: #fff;
+  padding: 3px;
+  margin-left: 15px;
+}
+
+.price {
+  margin-top: 3px;
+}
+
+.box-cost {
+  margin-left: 83px;
+}
+
+.usd-cost {
+  margin-inline-start: auto;
+}
+
+del {
+  color: #cec7c7;
+  font-size: 11px;
+}
+
+.box .form-select {
+  display: none;
+}
+
+p {
+  margin-bottom: 0px;
+  margin-top: -3px;
+  margin-left: 9px;
+}
+span {
+  margin-bottom: 0px;
+  margin-top: -3px;
+  margin-left: 9px;
+}
+.select {
+  display: inline-flex;
+  margin-left: 60px;
+}
+
+.select-label {
+  margin-left: -23px;
+  font-size: 16px;
+}
+
+.round-select {
+  font-size: 15px;
+  padding: 5px 20px 5px 10px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 20px 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.box .popular-badge {
+  position: absolute;
+  top: 12px;
+  right: 65px;
+  transform: translate(50%, -50%);
+  background-color: #fc5b83;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 0 0 4px 4px;
+  z-index: 2;
+}
+
+.box-unit {
+  margin-top: 2px;
+}
+
+.box3-badge {
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  margin-left: 0.3em;
+}
+
+.box-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8.5rem;
+  margin-top: 20px;
+}
+
+.free-delivery {
+  margin-left: 0px;
+  color: #fc5b83;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #fc5b83;
+  border: #fc5b83;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.box.expanded .form-select {
+  display: block;
+  opacity: 1;
+}
+
+.box.expanded {
+  height: 190px;
+  width: 360px;
+  background-color: #f9e4e9;
+  border-color: #e96c8c;
+}
+
+.box.expanded input[type="checkbox"],
+.box.expanded input[type="radio"] {
+  accent-color: #fc5b83;
+}
